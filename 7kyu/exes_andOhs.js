@@ -32,3 +32,10 @@ function XO(str) {
     return false;
   }
 }
+
+
+// cool better way makes all the x, and os into arrays and compaires the length
+
+// function XO(str) {
+//   return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+// }
