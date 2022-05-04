@@ -24,10 +24,11 @@
 
 // Assumption: Assume that Desired Principal 'D' is always greater than the initial principal. However it is best to take into consideration that if Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.
 
+// tax profit made each year not all
 function calculateYears(principal, interest, tax, desired) {
   let years = 0;
   let ammount = principal;
-  for (let x = 0; x < 10; x++) {
+  for (let x = 0; x < Infinity; x++) {
     if (ammount >= desired) {
       return years;
     }
@@ -35,11 +36,21 @@ function calculateYears(principal, interest, tax, desired) {
     let taxes = intrestNum * tax;
     ammount = ammount + intrestNum - taxes;
     years++;
-    console.log(ammount);
-    console.log(years);
   }
 
   // your code
 }
+
+
+// better way using while loop instead of a for loop
+// function calculateYears(principal, interest, tax, desired) {
+//   // your code
+//   var years = 0;
+//   while(principal < desired){
+//     principal += (principal * interest) * (1 - tax);
+//     years++;
+//   }
+//   return years;
+// }
 
 calculateYears(1000, 0.05, 0.18, 1100);
