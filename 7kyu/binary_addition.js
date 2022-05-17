@@ -7,13 +7,13 @@
 // 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
-const addBinary = (a, b) => {
-  const restult = a + b;
-  restult = restult.toString(2);
-  return restult;
-};
-
-// refactored by me
 // const addBinary = (a, b) => {
-//   return (a + b).toString(2);
+//   const restult = a + b;
+//   restult = restult.toString(2);
+//   return restult;
 // };
+
+refactored by me
+const addBinary = (a, b) => {
+  return (a + b).toString(2);
+};
