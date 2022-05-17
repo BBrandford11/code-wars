@@ -21,5 +21,6 @@ function deleteNth(arr, n) {
       result.push(arr[x]);
     }
   }
+  
   return result;
 }
