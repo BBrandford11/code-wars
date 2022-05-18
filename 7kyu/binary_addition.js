@@ -13,7 +13,7 @@
 //   return restult;
 // };
 
-refactored by me
+// refactored by me
 const addBinary = (a, b) => {
   return (a + b).toString(2);
 };
