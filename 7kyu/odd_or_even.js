@@ -31,10 +31,12 @@ const oddOrEven = (array) => {
 
   // wanted to do a single liner using ?
 
-  if (total % 2 === 0) {
-    return "even";
-    // not sure if else is correct here.
-  } else {
-    return "odd";
-  }
+  return total % 2 === 0 ? "even" : "odd"
+
+  // if (total % 2 === 0) {
+  //   return "even";
+  //   // not sure if else is correct here.
+  // } else {
+  //   return "odd";
+  // }
 };
