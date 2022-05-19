@@ -40,3 +40,6 @@ const oddOrEven = (array) => {
   //   return "odd";
   // }
 };
+
+//single liner using reduce need to practice reduce
+//const oddOrEven = a => a.reduce((s,n)=> s + n,0)%2 == 0 ? "even" : "odd";
