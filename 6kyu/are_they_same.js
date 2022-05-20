@@ -33,19 +33,19 @@
 
 // The two arrays have the same size (> 0) given as parameter in function comp.
 
-// const comp = (array1, array2) => {
-//   let sortedArray1 = array1.sort((a, b) => a - b);
-//   let sortedArray2 = array2.sort((a, b) => a - b);
-//   // console.log(sortedArray1)
-//   // console.log(sortedArray1)
-//   for (let x = 0; x < sortedArray1.length; x++) {
-//     for (let y = 0; y < sortedArray2.length; y++) {
-//       if (sortedArray2[y] !== sortedArray1[x] * sortedArray1[x]) {
-//         return false;
-//       } else return true;
-//     }
-//   }
-// };
+const comp = (array1, array2) => {
+  let sortedArray1 = array1.sort((a, b) => a - b);
+  let sortedArray2 = array2.sort((a, b) => a - b);
+  // console.log(sortedArray1)
+  // console.log(sortedArray1)
+  for (let x = 0; x < sortedArray1.length; x++) {
+    for (let y = 0; y < sortedArray2.length; y++) {
+      if (sortedArray2[y] !== sortedArray1[x] * sortedArray1[x]) {
+        return false;
+      } else return true;
+    }
+  }
+};
 
 
 
