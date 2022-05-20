@@ -33,25 +33,43 @@
 
 // The two arrays have the same size (> 0) given as parameter in function comp.
 
+// const comp = (array1, array2) => {
+//     if(array1 === null ||array2 === null || array1.length === 0 || array2.length === 0  ) {
+//       return false
+//     }
+//     array1 = array1.sort((a, b) => a - b);
+//     array2 = array2.sort((a, b) => a - b);
+//     for (let x = 0; x < array1.length; x++) {
+//       for (let y = 0; y < array2.length; y++) {
+//         if (array2[y] !== array1[x] * array1[x]) {
+//           return false;
+//         }
+//       }
+//     }
+//     return true
+//   };
 
-
+// found out after i only needed one for loop instead of 2 since i know the position should be the same of x and y
 const comp = (array1, array2) => {
-    if(array1 === null ||array2 === null || array1.length === 0 || array2.length === 0  ) {
-      return false
+  if (
+    array1 === null ||
+    array2 === null ||
+    array1.length === 0 ||
+    array2.length === 0
+  ) {
+    return false;
+  }
+  let sortedArray1 = array1.sort((a, b) => a - b);
+  let sortedArray2 = array2.sort((a, b) => a - b);
+  console.log(sortedArray1);
+  console.log(sortedArray1);
+  for (let x = 0; x < sortedArray1.length; x++) {
+    if (sortedArray2[x] !== sortedArray1[x] * sortedArray1[x]) {
+      return false;
     }
-    array1 = array1.sort((a, b) => a - b);
-    array2 = array2.sort((a, b) => a - b);
-    for (let x = 0; x < array1.length; x++) {
-      for (let y = 0; y < array2.length; y++) {
-        if (array2[y] !== array1[x] * array1[x]) {
-          return false;
-        } 
-      }
-    }
-    return true
-  };
-
-  
+  }
+  return true;
+};
 
 console.log(
   comp(
