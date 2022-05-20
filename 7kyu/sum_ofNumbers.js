@@ -26,7 +26,9 @@ const getSum = (a, b) => {
     }
   }
 
-
+  if (a === b ){
+    return a
+  }
 
   return total;
 };
