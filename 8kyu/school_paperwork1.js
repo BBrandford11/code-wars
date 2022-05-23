@@ -14,3 +14,9 @@ function paperwork(n, m) {
   }
   return n * m
 }
+
+
+// think of returns using the ??? 
+// function paperwork(n, m) {
+//   return n > 0 && m > 0 ? n * m : 0
+// }
