@@ -18,8 +18,6 @@
 
 // [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 const tribonacci = (signature, n) => {
-  console.log(signature);
-  console.log(n);
   if (n === 0) {
     return [];
   }
