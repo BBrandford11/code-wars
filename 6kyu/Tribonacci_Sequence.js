@@ -34,3 +34,25 @@ const tribonacci = (signature, n) => {
   }
   return result;
 };
+ 
+// cleaner way using slice 
+// function tribonacci(signature,n){
+//   //your code here
+//    var result = signature;
+  
+//   if (n==0){
+//     return [];
+//   }
+//   if (n <= 3){
+//     return result.slice(0,n)
+//   }
+  
+//   function sum(a,b){
+//     return a+b;
+//   }
+  
+//   for (var i=0; i<n-3; i++){
+//     result.push(result.slice(i,i+3).reduce(sum,0))
+//   }
+  
+//   return result;
