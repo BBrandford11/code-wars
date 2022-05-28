@@ -35,7 +35,7 @@ const tribonacci = (signature, n) => {
   return result;
 };
  
-// cleaner way using slice 
+// cleaner way using slice  
 // function tribonacci(signature,n){
 //   //your code here
 //    var result = signature;
