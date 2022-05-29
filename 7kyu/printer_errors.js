@@ -17,4 +17,17 @@
 
 function printerError(s) {
   // your code
+  const stringLength = s.length
+  let errors = 0
+
+  for (let x = 0; x < s.length; x++) {
+    if (s.charCodeAt(x) < 109){
+      errors++
+    }
+    console.log(s.charCodeAt(x))
+    
+  }
+  return `${errors}/${stringLength}`
 }
+
+printerError("abcdefghijklmnopqrstuvwxyz")
