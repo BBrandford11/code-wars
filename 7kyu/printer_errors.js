@@ -21,13 +21,11 @@ function printerError(s) {
   let errors = 0
 
   for (let x = 0; x < s.length; x++) {
-    if (s.charCodeAt(x) < 109){
+
+    //didnt need to use charCode can just use > "m" and it auto changes it to the number
+    if (s.charCodeAt(x) > 109){
       errors++
-    }
-    console.log(s.charCodeAt(x))
-    
+    }    
   }
   return `${errors}/${stringLength}`
 }
-
-printerError("abcdefghijklmnopqrstuvwxyz")
