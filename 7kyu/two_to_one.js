@@ -12,12 +12,12 @@
 function longest(s1, s2) {
   let string = "";
   for (let x = 0; x < s1.length; x++) {
-    if (string.includes(s1[x]) === false) {
+    if (!string.includes(s1[x]) ) {
       string += s1[x];
     }
   }
   for (let y = 0; y < s2.length; y++) {
-    if (string.includes(s2[y]) === false) {
+    if (!string.includes(s2[y])) {
       string += s2[y];
     }
   }
