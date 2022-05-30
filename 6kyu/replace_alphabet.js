@@ -14,12 +14,10 @@
 function alphabetPosition(text) {
   let result = "";
   for (let x = 0; x < text.length; x++) {
-    
     if (
       text.toLowerCase().charCodeAt(x) - 96 >= 1 &&
       text.toLowerCase().charCodeAt(x) - 96 <= 26
     ) {
-
       result += text.toLowerCase().charCodeAt(x) - 96 + " ";
     }
   }
