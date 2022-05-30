@@ -14,13 +14,7 @@
 function alphabetPosition(text) {
   let result = "";
   for (let x = 0; x < text.length; x++) {
-    if (
-      text.toLowerCase().charCodeAt(x) - 96 >= 1 &&
-      text.toLowerCase().charCodeAt(x) - 96 <= 26 &&
-      x === text.length - 1
-    ) {
-      result += text.toLowerCase().charCodeAt(x) - 96
-    }
+    
     if (
       text.toLowerCase().charCodeAt(x) - 96 >= 1 &&
       text.toLowerCase().charCodeAt(x) - 96 <= 26
@@ -29,6 +23,6 @@ function alphabetPosition(text) {
       result += text.toLowerCase().charCodeAt(x) - 96 + " ";
     }
   }
-  return result;
+  return result.trim();
 }
 console.log(alphabetPosition("The narwhal bacons at midnight."));
