@@ -14,3 +14,10 @@ const abbrevName = (name) => {
   return `${split[0][0].toUpperCase()}. ${split[1][0].toUpperCase()}`
 }
 console.log(abbrevName("Bryce Brandford"))
+
+
+// function abbrevName(name){
+
+//   return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+
+// }
