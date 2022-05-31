@@ -9,3 +9,10 @@ function noSpace(x) {
   }
   return result;
 }
+
+
+// tried doing this first and was close but found out it works after
+// function noSpace(x){
+
+//   return x.split(" ").join("")
+// }
