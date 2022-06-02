@@ -10,16 +10,20 @@ function persistence(num) {
   if (num < 10) {
     return 0;
   }
+  // setting base counter to return
   let number = 0;
-
+  //splitting number into array of strings to itterate thru
   let split = num.toString().split("");
 
+  //while loop for split being over 9
   while (split.length > 1) {
     let result = 1;
     for (let x = 0; x < split.length; x++) {
       result *= split[x];
-    }
+      }
+    //making split = the multiplication of all the nums in the array
     split = result.toString().split("");
+    // increase counter
     number++;
   }
   return number;
