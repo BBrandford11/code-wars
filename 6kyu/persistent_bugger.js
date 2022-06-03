@@ -24,6 +24,7 @@ function persistence(num) {
     //making split = the multiplication of all the nums in the array
     split = result.toString().split("");
     // increase counter
+    
     number++;
   }
   return number;
