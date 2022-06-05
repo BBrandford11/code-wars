@@ -3,7 +3,8 @@
 //     Note: you will always receive a valid array (string in COBOL) containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
 function isValidWalk(walk) {
-  if (walk.length > 10) {
+  // should have used if(walk.length !== 10)
+  if (walk.length > 10 || walk.length < 10) {
     return false;
   }
   let vert = 0;
@@ -22,9 +23,9 @@ function isValidWalk(walk) {
       horz--;
     }
   }
-  if(vert === 0 && horz === 0){
-    return true
+  if (vert === 0 && horz === 0) {
+    return true;
   } else {
-    return false
+    return false;
   }
 }
