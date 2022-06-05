@@ -9,5 +9,5 @@
 
 
 function descendingOrder(n){
-  return n.sort((a,b)=> b - a )
+  return Number(String(n).split("").sort((a,b) => b - a))
 }
