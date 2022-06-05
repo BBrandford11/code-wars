@@ -22,3 +22,7 @@ function past(h, m, s){
   let seconds = mins + s
   return seconds * 1000
 }
+// this would be the best practice would refactor to this after
+// function past(h, m, s){
+//   return ((h*3600)+(m*60)+s)*1000;
+// }
