@@ -15,5 +15,14 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 function removeSmallest(numbers) {
-  throw "TODO: removeSmallest";
+  let result = [];
+  let nums = Infinity;
+
+  for (let x = 0; x < numbers.length; x++) {
+    if (numbers[x] < nums) {
+      nums = x;
+    }
+  }
+
+  return result;
 }
