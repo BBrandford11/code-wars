@@ -14,34 +14,34 @@
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
-function removeSmallest(numbers) {
-  let result = [];
-  let nums = Infinity;
-
-  for (let x = 0; x < numbers.length; x++) {
-    if (numbers[x] < nums) {
-      nums = x;
-    }
-  }
-  numbers.slice(1, nums)
-
-  return result;
-}
-
-
 // function removeSmallest(numbers) {
-//   var smallest;
-//   var newNums = [];
-//   numbers.forEach(function(num) {
-//     if (smallest > num || smallest === undefined) {
-//       smallest = num;
+//   let result = [];
+//   let nums = Infinity;
+
+//   for (let x = 0; x < numbers.length; x++) {
+//     if (numbers[x] < nums) {
+//       nums = x;
 //     }
-//   });
-//   var index = numbers.indexOf(smallest);
-//   numbers.forEach(function(n, i) {
-//     if (i !== index) {
-//       newNums.push(n);
-//     }
-//   });
-//   return newNums;
+//   }
+//   numbers.slice(1, nums)
+
+//   return result;
 // }
+
+// better way doing it finding the index then another loopp pushing all but that one index
+function removeSmallest(numbers) {
+  var smallest;
+  var newNums = [];
+  numbers.forEach(function(num) {
+    if (smallest > num || smallest === undefined) {
+      smallest = num;
+    }
+  });
+  var index = numbers.indexOf(smallest);
+  numbers.forEach(function(n, i) {
+    if (i !== index) {
+      newNums.push(n);
+    }
+  });
+  return newNums;
+}
