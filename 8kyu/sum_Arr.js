@@ -22,9 +22,6 @@
 
 // Sum Numbers
 function sum(numbers) {
-  if (numbers.length === 0) {
-    return 0;
-  }
-
+ //dont need if statment if nums.length because reduce will return 0 if nothing in the array
   return numbers.reduce((a, b) => a + b, 0);
 }
