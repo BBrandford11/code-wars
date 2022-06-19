@@ -22,13 +22,16 @@
 
 function wave(str) {
   let result = [];
-  let stringTrim = str.trim();
-  for (let x = 0; x < stringTrim.length; x++) {
-    let string1 = stringTrim.split("");
+  // let stringTrim = str.trim();
+  for (let x = 0; x < str.length; x++) {
+    if (str[x] === " ") {
+    } else {
+      let string1 = str.split("");
 
-    string1[x] = string1[x].toUpperCase();
-    string1 = string1.join("");
-    result.push(string1);
+      string1[x] = string1[x].toUpperCase();
+      string1 = string1.join("");
+      result.push(string1);
+    }
   }
   return result;
 }
