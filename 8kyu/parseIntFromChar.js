@@ -5,10 +5,5 @@
 // Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
 
 function getAge(inputString){
-  const array1 = inputString.split("")
-  if(array1[0] === 1){
-    return "1 year old"
-  }else {
-    return `${array1[0]}s old`
-  }
+  return Number(inputString.split("")[0])
   }
