@@ -10,5 +10,10 @@
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
 var number=function(array){
-  //your awesome code here
+  let result= []
+  for (let x = 0; x < array.length; x++) {
+    result.push(`${x +1}: ${array[x]}`)
+    
+  }
+  return result
 }
