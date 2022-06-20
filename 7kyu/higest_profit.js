@@ -14,18 +14,24 @@
 
 // All arrays or lists will always have at least one element, so you don't need to check the length. Also, your function will always get an array or a list, you don't have to check for null, undefined or similar.
 
+// function minMax(arr){
+//   let highest = -Infinity
+//   let lowest = Infinity
+//   for (let x = 0; x < arr.length; x++) {
+//     if (arr[x] < lowest) {
+//       lowest = arr[x]
+//     }
+//     if (arr[x] > highest) {
+//       highest = arr[x]
+//     }
 
-function minMax(arr){
-  let highest = -Infinity
-  let lowest = Infinity
-  for (let x = 0; x < arr.length; x++) {
-    if (arr[x] < lowest) {
-      lowest = arr[x]
-    }
-    if (arr[x] > highest) {
-      highest = arr[x]
-    }
-    
-  }
-  return [lowest,highest]; // fix me!
+//   }
+//   return [lowest,highest]; // fix me!
+// }
+
+//trying with sort
+
+function minMax(arr) {
+  let result = arr.sort((a, b) => a - b);
+  return [result[0], result[arr.length - 1]];
 }
