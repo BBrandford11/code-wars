@@ -19,14 +19,22 @@
 
 // - h = 3, bounce = 0.66, window = 1.5, result is 3
 
-// - h = 3, bounce = 1, window = 1.5, result is -1 
+// - h = 3, bounce = 1, window = 1.5, result is -1
 
 // (Condition 2) not fulfilled).
 
-
-function bouncingBall(h,  bounce,  window) {
+function bouncingBall(h, bounce, window) {
   // your code here
-  if(h < 0 || bounce < 0 || bounce > 1|| window > h) {
-    return -1
+  if (h < 0 || bounce <= 0 || bounce >= 1 || window >= h) {
+    return -1;
   }
+  let result = 1;
+
+  while (h > window) {
+    h = h * bounce;
+    if (h > window) {
+      result += 2;
+    }
+  }
+  return result;
 }
