@@ -9,3 +9,8 @@ function sumMix(x) {
   }
   return result;
 }
+
+
+// function sumMix(x) {
+//   return x.reduce((s, n) => s + Number(n), 0)
+// }
