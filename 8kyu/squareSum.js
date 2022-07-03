@@ -4,5 +4,10 @@
 
 
 function squareSum(numbers){
-
+  let result = 0
+  for (let x = 0; x < numbers.length; x++) {
+    result += numbers[x] ** 2
+    
+  }
+  return result
 }
