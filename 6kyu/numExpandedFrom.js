@@ -23,5 +23,6 @@ function expandedForm(num) {
       result.push(numString[x] + zeros);
     }
   }
+  
   return result.join(" + ");
 }
