@@ -11,3 +11,9 @@ function squareSum(numbers){
   }
   return result
 }
+
+// function squareSum(numbers){
+//   return numbers.reduce(function(sum, n){
+//     return (n*n) + sum;
+//   }, 0)
+// }
