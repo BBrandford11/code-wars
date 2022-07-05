@@ -10,6 +10,7 @@
 
 const arrayDiff = (a, b) => {
   let final = [];
+  
   for (let x = 0; x < a.length; x++) {
     if (!b.includes(a[x])) {
       final.push(a[x]);
