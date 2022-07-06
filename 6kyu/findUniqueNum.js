@@ -12,11 +12,12 @@
 //     Find the unique number (this kata)
 //     Find the unique string
 //     Find The Unique
-
 function findUniq(arr) {
+  console.log(arr);
   for (let x = 0; x < arr.length; x++) {
-    if(arr[x] !== arr[x +1])
-    return arr[x + 1]
-    
+    if (arr[0] !== arr[1] && arr[0] !== arr[2]) {
+      return arr[0];
+    }
+    if (arr[x] !== arr[x + 1]) return arr[x + 1];
   }
 }
