@@ -8,14 +8,20 @@ function rot13(message) {
   for (let x = 0; x < message.length; x++) {
     let number = message.charCodeAt(x);
     console.log(number);
-    if (number > 106) {
-
-
-      result.push(String.fromCharCode((0 + (number - 106) + 93)));
-    }else {
-      result.push(String.fromCharCode(number + 13 ));
+    if (message[x] === " ") {
+      result.push(" ")
     }
-
+    if (number >= 78 && number < 91) {
+      result.push(String.fromCharCode(0 + (number - 106) + 93));
+      console.log("if");
+    } else if (number >= 65 && number < 78) {
+      result.push(String.fromCharCode(number + 13));
+      console.log("else");
+    } else if (number > 106) {
+      result.push(String.fromCharCode(0 + (number - 106) + 93));
+    } else {
+      result.push(String.fromCharCode(number + 13));
+    }
   }
 
   console.log(message);
