@@ -6,13 +6,19 @@ function rot13(message) {
   //your code here
   let result = [];
   for (let x = 0; x < message.length; x++) {
-    result.push(message.charCodeAt(x));
+    let number = message.charCodeAt(x);
+    console.log(number);
+    if (number > 106) {
+
+
+      result.push(String.fromCharCode((0 + (number - 106) + 93)));
+    }else {
+      result.push(String.fromCharCode(number + 13 ));
+    }
+
   }
 
-  for (let y = 0; y < result.length; y++) {
-    result[y] += 16;
-  }
   console.log(message);
   console.log(result, "result");
-  return result;
+  return result.join("");
 }
