@@ -9,7 +9,6 @@
 // twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
 
 function twoSum(numbers, target) {
-  let result = [];
   for (let x = 0; x < numbers.length; x++) {
     for (let y = 0; y < numbers.length; y++) {
       if (numbers[x] + numbers[y] === target && x !== y) {
@@ -17,5 +16,4 @@ function twoSum(numbers, target) {
       }
     }
   }
-  return result;
 }
