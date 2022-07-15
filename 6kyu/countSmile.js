@@ -22,11 +22,27 @@
 
 //return the total number of smiling faces in the array
 function countSmileys(arr) {
-  let result = 0 
+  let result = 0;
   arr.map((x) => {
-    if(x === ":)" || x === ":D" || x === ";-D" || x === ":~)" ||) {
-      result++
+    let split = x.split("");
+    if (split.length === 3) {
+      if (
+        (split[0] === ":" || split[0] === ";") &&
+        (split[split.length - 1] === ")" || split[split.length - 1] === "D")
+      ) {
+        if (split[1] === "~" || split[1] === "-" || split[1] === "") {
+          result++;
+        }
+      }
     }
-  })
-  return result
+    if (split.length === 2) {
+      if (
+        (split[0] === ":" || split[0] === ";") &&
+        (split[split.length - 1] === ")" || split[split.length - 1] === "D")
+      ) {
+        result++;
+      }
+    }
+  });
+  return result;
 }
