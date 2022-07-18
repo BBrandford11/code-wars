@@ -35,6 +35,7 @@ function bouncingBall(h, bounce, window) {
     if (h > window) {
       result += 2;
     }
+    
   }
   return result;
 }

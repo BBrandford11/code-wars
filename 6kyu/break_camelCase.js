@@ -17,6 +17,7 @@ function solution(string) {
     }
   }
   return result
+  
 }
 
 

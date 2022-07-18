@@ -21,6 +21,8 @@ var maxSequence = function (arr) {
         maxResult = score;
       }
     }
+    
+
   }
 
   return maxResult;
