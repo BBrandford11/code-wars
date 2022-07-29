@@ -4,14 +4,12 @@
 
 // Note: if there is nothing to sum, the sum is default to 0.
 
-
 function positiveSum(arr) {
-  let result = 0 
+  let result = 0;
   for (let x = 0; x < arr.length; x++) {
-    if(arr[x] > 0 ){
-      result += arr[x]
+    if (arr[x] > 0) {
+      result += arr[x];
     }
-    
   }
-  return result
+  return result;
 }
