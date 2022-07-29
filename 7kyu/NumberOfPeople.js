@@ -15,7 +15,8 @@ var number = function (busStops) {
   let leaving = 0;
 
   for (let x = 0; x < busStops.length; x++) {
-    getOn += busStops[x][1];
-    leaving += busStops[x][2];
+    getOn += busStops[x][0];
+    leaving += busStops[x][1];
   }
+  return getOn - leaving;
 };
