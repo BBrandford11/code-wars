@@ -12,4 +12,5 @@ function positiveSum(arr) {
     }
   }
   return result;
+  
 }
