@@ -12,16 +12,18 @@
 //     Output string must be two numbers separated by a single space, and highest number is first.
 
 function highAndLow(numbers) {
-  let higestNumber = -Infinity
-  let lowestNumber = Infinity
-  numbers.split(" ").map((x)=> {
-    if(x > higestNumber){
-      higestNumber = x
+  let higestNumber = -Infinity;
+  let lowestNumber = Infinity;
+
+  let map = numbers.split(" ")
+  for (let x = 0; x < map.length; x++) {
+    if (Number(map[x]) > higestNumber) {
+      higestNumber = map[x];
     }
-    if(x < lowestNumber){
-      lowestNumber = x
+    if (Number(map[x]) < lowestNumber) {
+      lowestNumber = map[x];
     }
-  })
-  let result = [higestNumber, lowestNumber]
-  return result.join(" ")
+    
+  }
+  return `${higestNumber} ${lowestNumber}`;
 }
