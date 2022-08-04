@@ -14,7 +14,7 @@
 function highAndLow(numbers) {
   let higestNumber = -Infinity
   let lowestNumber = Infinity
-  numbers.split("").map((x)=> {
+  numbers.split(" ").map((x)=> {
     if(x > higestNumber){
       higestNumber = x
     }
@@ -22,5 +22,6 @@ function highAndLow(numbers) {
       lowestNumber = x
     }
   })
-  return `${higestNumber} ${lowestNumber}`
+  let result = [higestNumber, lowestNumber]
+  return result.join(" ")
 }
