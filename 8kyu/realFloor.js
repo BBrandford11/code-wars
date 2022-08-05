@@ -9,23 +9,23 @@
 // More information here
 // Examples
 
-// 1  =>  0 
+// 1  =>  0
 // 0  =>  0
 // 5  =>  4
 // 15  =>  13
 // -3  =>  -3
 
 function getRealFloor(n) {
-  if(n === 0 ){
-    return 0
+  if (n === 0) {
+    return 0;
   }
-  if(n < 0 ){
-    return n
+  if (n < 0) {
+    return n;
   }
-  if(n < 13 ){
-    return n -1
+  if (n < 13) {
+    return n - 1;
   }
-  if(n > 13 ){
-    return 0
+  if (n > 13) {
+    return n - 2;
   }
 }
