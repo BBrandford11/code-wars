@@ -28,6 +28,7 @@ function getRealFloor(n) {
   if (n > 13) {
     return n - 2;
   }
+  
 }
 
 function getRealFloor(n) {
