@@ -6,6 +6,6 @@ function saleHotdogs(n) {
     return n * 95;
   }
   if (n >= 10) {
-    return n * 10;
+    return n * 90;
   }
 }
