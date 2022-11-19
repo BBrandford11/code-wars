@@ -2,15 +2,19 @@
 
 // Note: input will never be an empty string
 
-
-function fakeBin(x){
-  let result = ""
-  x.split("").map((num)=>{
-    if(num > 5) {
-      result += "0"
-    }else{
-      result += "1"
+function fakeBin(x) {
+  let result = "";
+  x.split("").map((num) => {
+    if (num < 5) {
+      result += "0";
+    } else {
+      result += "1";
     }
-  })
-  return result
+  });
+  return result;
 }
+
+
+// function fakeBin(x) {
+//   return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
