@@ -23,33 +23,24 @@
 //     +9 dog years for second year
 //     +5 dog years for each year after that
 
-var humanYearsCatYearsDogYears = function (humanYears) {
-  // Your code here!
+const humanYearsCatYearsDogYears = (humanYears) => {
   let catYears = 0;
   let dogYears = 0;
-
-  for (let x = 0; x < humanYears; x++) {
-    if ((x = 0)) {
+  
+  for (let i = 1; i <= humanYears; i++) {
+    if (i === 1) {
       catYears += 15;
-    }
-    if ((x = 1)) {
-      catYears += 9;
-    }
-    if (x > 1) {
-      catYears += 4;
-    }
-  }
-  for (let x = 0; x < humanYears; x++) {
-    if ((x = 0)) {
       dogYears += 15;
     }
-    if ((x = 1)) {
+    else if (i === 2) {
+      catYears += 9;
       dogYears += 9;
     }
-    if (x > 1) {
+    else {
+      catYears += 4;
       dogYears += 5;
     }
   }
+  return [humanYears,catYears,dogYears];
+}
 
-  return [humanYears, catYears, dogYears];
-};
