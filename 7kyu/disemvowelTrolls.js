@@ -28,4 +28,5 @@ function disemvowel(str) {
       disSentence += str[x]
     }
   }
+  return disSentence
 }
