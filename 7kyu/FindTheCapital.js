@@ -5,13 +5,21 @@
 
 // Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 
-
 var capitals = function (word) {
-	let result = []
-  word.split("").map((x, index)=> {
+  let result = [];
+  word.split("").map((x, index) => {
     if (x === x.toUpperCase()) {
-      result.push(index)
+      result.push(index);
     }
-  })
-  return result
+  });
+  return result;
 };
+
+
+// var capitals = function (word) {
+//   var caps = [];
+//   for(var i = 0; i < word.length; i++) {
+//     if(word[i].toUpperCase() == word[i]) caps.push(i);
+//   }
+//   return caps;
+// };
