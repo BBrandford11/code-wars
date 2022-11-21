@@ -9,7 +9,7 @@
 function filter_list(l) {
   let result = [];
   for (let x = 0; x < l.length; x++) {
-    if (l[x].isInteger) {
+    if (Number.isInteger(l[x])) {
       result.push(l[x]);
     }
   }
