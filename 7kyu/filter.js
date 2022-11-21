@@ -15,3 +15,8 @@ function filter_list(l) {
   }
   return result;
 }
+
+
+// function filter_list(l) {
+//   return l.filter(e => Number.isInteger(e));
+// }
