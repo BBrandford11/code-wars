@@ -7,5 +7,11 @@
 
 
 function filter_list(l) {
-  return l.map((x)=> { })
+  let result = [];
+  for (let x = 0; x < l.length; x++) {
+    if (l[x].isInteger) {
+      result.push(l[x]);
+    }
+  }
+  return result;
 }
