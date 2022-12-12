@@ -13,3 +13,10 @@ function friend(friends) {
   });
   return result;
 }
+
+
+// function friend(friends){
+//   return friends.filter(n => n.length === 4)
+// }
+
+// using filtter instead of map
