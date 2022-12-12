@@ -1,3 +1,7 @@
+// complicated to explain found a very similar problem 
+// https://www.sharecodepoint.com/2019/07/given-string-and-string-represents-a-table-in-CSV-format.html
+
+
 function solution(S, C) {
   let split = S.split("\n");
   let column = split[0].split(",");
