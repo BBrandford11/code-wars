@@ -5,11 +5,11 @@
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
 function friend(friends) {
-  let result = []
-  friends.map((f)=> {
-    if(f.length === 4){
-      result.push(f)
+  let result = [];
+  friends.map((f) => {
+    if (f.length === 4) {
+      result.push(f);
     }
-  })
-  return result
+  });
+  return result;
 }
